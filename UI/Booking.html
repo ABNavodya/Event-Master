@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>EVENT MASTER</title>
+    <link rel="stylesheet" href="style_u.css"/>
+</head>
+<body >
+    <div class=" nav-bar">
+        <div>
+            <a href=" website.html"> EVENT MASTER</a>
+        </div>
+    <nav>
+        <ul id=" Menu Bar">
+            <li> <a href="http://127.0.0.1:5500/EVe.html"> Home</a></li>
+            <li> <a href=" http://127.0.0.1:5500/Booking.html"> Booking</a></li>
+            <li> <a href="http://127.0.0.1:5500/Message.html"> Messege</a></li>                
+            
+        </ul>
+        
+    </nav>
+    </div>
+    <div class="form-container">
+        <form class="form" action="submit-form.php" method="post">
+            <h2>Ticket Booking Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="id-number">ID Number:</label>
+            <input type="text" id="id-number" name="id-number" required>
+            <br>
+            <label for="amount-of-bookings">Amount of Bookings:</label>
+            <select class="picker" id="amount-of-bookings" name="amount-of-bookings" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <label for="event">Event:</label>
+            <select id="event" name="event" required>
+                <option value="Event 1">Event 1</option>
+                <option value="Event 2">Event 2</option>
+                <option value="Event 3">Event 3</option>
+                <option value="Event 4">Event 4</option>
+                <option value="Event 5">Event 5</option>
+            </select>
+            <br>
+            <input type="submit" value="Book Tickets">
+            <input type="button" value="Cancel">
+        </form>
+    </div>
+</body>
+</html>
