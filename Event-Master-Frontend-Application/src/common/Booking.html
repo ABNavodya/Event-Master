@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>EVENT MASTER</title>
+    <link rel="stylesheet" href="../css/style_u.css"/>
+</head>
+<body>
+    <div class=" nav-bar">
+        <div>
+            <a href=" website.html"> EVENT MASTER</a>
+        </div>
+    <nav>
+        <ul id=" Menu Bar">
+            <li> <a href="http://127.0.0.1:5500/EVe.html"> Home</a></li>
+            <li> <a href=" http://127.0.0.1:5500/Booking.html"> Booking</a></li>
+            <li> <a href="http://127.0.0.1:5500/Message.html"> Messege</a></li>                
+            
+        </ul>
+        
+    </nav>
+    </div>
+
+    <div class="form-container">
+<!--        <form class="form" action="submit-form.php" method="post">-->
+        <form class="form" method="post">
+
+            <h2 style="text-align: left">Ticket Booking Form</h2>
+
+            <div class="available-tickets">
+                <h3>Available Tickets : </h3>
+                <input type='text' id='available_tick' class="available_tick"/>
+            </div>
+
+            <div class="available-tickets">
+
+                <h3 style="text-align: left">Booking ID : </h3>
+                <input type='text' id='booking_id' class="available_tick"/>
+
+            </div>
+
+            <label  style="text-align: left; margin-top: 30px" >User ID :</label>
+            <input type="text" id="userID" name="name" required>
+            <br>
+            <label  style="text-align: left">User Name :</label>
+            <input type="text" id="userName" name="id-number" required>
+            <br>
+            <label style="text-align: left">Total of Bookings:</label>
+            <select class="picker" id="total_booking" name="amount-of-bookings" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+<!--            <label for="event">Event:</label>-->
+<!--            <select id="event" name="event" required>-->
+<!--                <option value="Event 1">Event 1</option>-->
+<!--                <option value="Event 2">Event 2</option>-->
+<!--                <option value="Event 3">Event 3</option>-->
+<!--                <option value="Event 4">Event 4</option>-->
+<!--                <option value="Event 5">Event 5</option>-->
+<!--            </select>-->
+<!--            <br>-->
+            <button type="button" class="btn" id="btnBookingNow"> Booking Now </button>
+            <button type="submit" class="btn"> Cancel </button>
+        </form>
+    </div>
+
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="../js/controller/booking.controller.js"></script>
+</body>
+</html>

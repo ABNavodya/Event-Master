@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>EVENT MASTER</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="Home">
+    <div class=" nav-bar">
+        <div>
+            <a href=" website.html"> EVENT MASTER</a>
+        </div>
+        <nav>
+            <ul id=" Menu Bar">
+                <li><a href=" http://127.0.0.1:5500/Event%20Master%20Application/Event-Master-Frontend-Application/src/common/EVe.html"> Home</a></li>
+                <li><a href="http://127.0.0.1:5500/Event%20Master%20Application/Event-Master-Frontend-Application/src/common/Event%20list.html"> Event List</a></li>
+                <li><a href="http://127.0.0.1:5500/Event%20Master%20Application/Event-Master-Frontend-Application/src/common/About%20Us.html"> About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="Login-Form" class=" login-page">
+        <div class="Form-box">
+            <div class=" button">
+                <div id=" Button"></div>
+                <button type="button" onclick='login()' class='toggle-btn'>Sign in</button>
+                <button type="button" onclick='register()' class='toggle-btn'>Sign up</button>
+            </div>
+            <form id='login' class='login_form'>
+                <input type='text' class='input-field' placeholder='Email ' required id="txtUserSignInEmail">
+                <input type='password' class='input-field' placeholder='Password' required id="txtUserSignInPassword">
+                <button type='button' class='submit-btn' id="btnSignIn">Log in</button>
+            </form>
+            <form id='register' class='signup_form'>
+                <input type='text' class='input-field' placeholder='ID' required id="txtUserID">
+                <input type='text' class='input-field' placeholder='Name' required id="txtUserName">
+                <input type='email' class='input-field' placeholder='Email ' required id="txtUserEmail">
+                <input type='password' class='input-field' placeholder='password ' required id="txtUserPassword">
+                <input type='password' class='input-field' placeholder='confirm password ' required
+                       id="txtUserConfirmPassword">
+                <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                <button type='button' class='submit-btn' id="btnSignUp">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="../js/controller/user.controller.js"></script>
+<script>
+    var x = document.getElementById('login');
+    var y = document.getElementById('register');
+    var z = document.getElementById('Button');
+
+    function register() {
+        x.style.left = '-400px';
+        y.style.left = '50px';
+        z.style.left = '110px';
+    }
+
+    function login() {
+        x.style.left = '50px';
+        y.style.left = '450px';
+        z.style.left = '0px';
+    }
+</script>
+<script>
+    var modal = document.getElementById('Login Form');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+</body>
+</html>
